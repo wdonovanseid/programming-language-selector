@@ -34,4 +34,6 @@ body {
 
 #result, #congrats {
   display: none;
+  background-color: yellow;
+  color: black;
 }
