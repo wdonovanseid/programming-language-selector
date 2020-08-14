@@ -17,7 +17,11 @@ $(document).ready(function() {
     let pythontotal = 0;
 
     if (answer1 === "ruby") {
-      rubytotal = add(rubytotal, 1)
+      rubytotal = add(rubytotal, 1);
+    } else if (answer1 === "c#") {
+      csharptotal = add(csharptotal, 1);
+    } else if (answer1 === "python") {
+      pythontotal = add(pythontotal, 1);
     }
 
     if (rubytotal > csharptotal && rubytotal > pythontotal) {
