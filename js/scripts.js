@@ -2,6 +2,24 @@ function add(num1, num2) {
   return num1 + num2;
 }
 
+let modal = document.getElementById("modalImg");
+let btn = document.getElementById("myBtn");
+let span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 $(document).ready(function() {
   $("form#survey").submit(function(event) {
     event.preventDefault();
