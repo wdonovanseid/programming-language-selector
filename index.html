@@ -4,6 +4,7 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
   <title>Programming Language Suggester</title>
 </head>
@@ -17,14 +18,24 @@
       <img src="img/python.jpg" alt="Logo of Python">
     </div>
 
-    <button id="myBtn">Click Here for </button>
-    <div id="modalImg" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <img src="img/infographic.png">
+    <button class="btn btn-info" id="myBtn">Click Here for Infographic</button>
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">M</h4>
+          </div>
+          <div class="modal-body">
+            <img src="img/infographic.png">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
       </div>
     </div>
-
+      
     <h4>Please fill in the form below:</h4>
 
     <form id="survey">
