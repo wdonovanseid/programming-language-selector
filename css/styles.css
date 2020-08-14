@@ -2,8 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
-.row {
-  margin: 20px;
+#pLangImgs {
+  border: solid orange;
+  border-width: 20px;
+  background-color: white;
+  margin: 20px; 
 }
 
 h1 {
