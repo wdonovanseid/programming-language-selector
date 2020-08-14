@@ -24,13 +24,45 @@ $(document).ready(function() {
       pythontotal = add(pythontotal, 1);
     }
 
+    if (answer2 === "ruby") {
+      rubytotal = add(rubytotal, 1);
+    } else if (answer2 === "c#") {
+      csharptotal = add(csharptotal, 1);
+    } else if (answer2 === "python") {
+      pythontotal = add(pythontotal, 1);
+    }
+    
+    if (answer3 === "ruby") {
+      rubytotal = add(rubytotal, 1);
+    } else if (answer3 === "c#") {
+      csharptotal = add(csharptotal, 1);
+    } else if (answer3 === "python") {
+      pythontotal = add(pythontotal, 1);
+    }
+
+    if (answer4 === "ruby") {
+      rubytotal = add(rubytotal, 1);
+    } else if (answer4 === "c#") {
+      csharptotal = add(csharptotal, 1);
+    } else if (answer4 === "python") {
+      pythontotal = add(pythontotal, 1);
+    }
+
+    if (answer5 === "ruby") {
+      rubytotal = add(rubytotal, 1);
+    } else if (answer5 === "c#") {
+      csharptotal = add(csharptotal, 1);
+    } else if (answer5 === "python") {
+      pythontotal = add(pythontotal, 1);
+    }
+
     if (rubytotal > csharptotal && rubytotal > pythontotal) {
       $("#pLanguage").text("Ruby on Rails");
     } else if (csharptotal > rubytotal && csharptotal > pythontotal) {
       $("#pLanguage").text("C#");
     } else if (pythontotal > rubytotal && pythontotal > csharptotal) {
       $("#pLanguage").text("Python");
-    } else if (rubytotal === csharptotal && csharptotal === pythontotal) {
+    } else if (rubytotal === csharptotal || csharptotal === pythontotal || rubytotal === pythontotal) {
       $("#pLanguage").text("ANY")
     }
 
