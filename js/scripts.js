@@ -1,3 +1,8 @@
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+
 $(document).ready(function() {
   $("form#quiz").submit(function(event) {
     event.preventDefault();
@@ -6,6 +11,11 @@ $(document).ready(function() {
     const answer3 = $("select#ques3").val();
     const answer4 = $("select#ques4").val();
     const answer5 = $("select#ques5").val();
+
+    let rubytotal;
+    let csharptotal;
+    let pythontotal;
+
     
   });
 });
