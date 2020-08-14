@@ -19,12 +19,19 @@ img {
 }
 
 body {
-  background-image: url(../img/matrix.gif);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
   font-family: Times;
+}
+
+.main {
+  background-image: url(../img/matrix.gif);
+}
+
+.monty {
+  background-image: url(../img/monty.jpg);
 }
 
 .card {

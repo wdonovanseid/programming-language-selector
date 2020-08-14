@@ -54,6 +54,7 @@ $(document).ready(function() {
     } else if (answer5 === "c#") {
       csharptotal = add(csharptotal, 1);
       $("#congrats").show();
+      $("body").addClass("monty").removeClass("main");
     } else if (answer5 === "python") {
       pythontotal = add(pythontotal, 1);
     }
