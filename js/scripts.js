@@ -77,6 +77,6 @@ $(document).ready(function() {
 
     $("#theirName").text(fullname);
     $("#result").slideDown();
-    window.scrollBy(0, 200);
+    window.scrollBy(0, 2000);
   });
 });
