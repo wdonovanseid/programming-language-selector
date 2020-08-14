@@ -4,8 +4,9 @@ function add(num1, num2) {
 
 
 $(document).ready(function() {
-  $("form#quiz").submit(function(event) {
+  $("form#survey").submit(function(event) {
     event.preventDefault();
+    const fullname = $("#name").val();
     const answer1 = $("select#ques1").val();
     const answer2 = $("select#ques2").val();
     const answer3 = $("select#ques3").val();
@@ -67,6 +68,7 @@ $(document).ready(function() {
       $("#pLanguage").text("ANY programming language")
     }
 
+    $("#theirName").text(fullname);
     $("#result").show();
   });
 });

@@ -19,7 +19,12 @@
 
     <h4>Please fill in the form below:</h4>
 
-    <form id="quiz">
+    <form id="survey">
+      <div class="card">
+        <label for="name">Your Name:</label>
+        <input id="name" class="form-control" type="text">
+      </div>
+
       <div class="card">
         <label for="ques1">What would you like to use programming for?</label>
         <select id="ques1">
@@ -69,7 +74,7 @@
     </form>
 
     <div id="result">
-      <p>You are suited for <span id="pLanguage"></span>!</p>
+      <p><span id="theirName"></span>, you are suited for <span id="pLanguage"></span>!</p>
     </div>
 
     <div id="congrats">
