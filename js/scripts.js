@@ -12,10 +12,24 @@ $(document).ready(function() {
     const answer4 = $("select#ques4").val();
     const answer5 = $("select#ques5").val();
 
-    let rubytotal;
-    let csharptotal;
-    let pythontotal;
+    let rubytotal = 0;
+    let csharptotal = 0;
+    let pythontotal = 0;
 
-    
+    if (answer1 === ruby) {
+      rubytotal = add(rubytotal, 1)
+    }
+
+    if (rubytotal > csharp && rubytotal > pythontotal) {
+      $("#pLanguage").text("Ruby on Rails");
+    } else if (csharp > rubytotal && csharp > pythontotal) {
+      $("#pLanguage").text("C#");
+    } else if (pythontotal > rubytotal && pythontotal > csharp) {
+      $("#pLanguage").text("Python");
+    } else if (rubytotal === csharptotal && csharp === pythontotal) {
+      $("#pLanguage").text("ANY")
+    }
+
+    $("#result").show();
   });
 });
