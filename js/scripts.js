@@ -78,6 +78,6 @@ $(document).ready(function() {
 
     $("#theirName").text(fullname);
     $("#result").slideDown();
-    window.scrollBy(0, 2000);
+    setTimeout(function() {window.scrollBy(0, 2000); }, 400);
   });
 });
