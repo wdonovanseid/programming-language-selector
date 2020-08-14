@@ -69,10 +69,11 @@ $(document).ready(function() {
     } else if (pythontotal > rubytotal && pythontotal > csharptotal) {
       $("#pLanguage").text("Python");
       $("#choiceL").text("C's");
-      $("#pLangInfo").text("Python is a general-purpose coding language—which means that, unlike HTML, CSS, and JavaScript, it can be used for other types of programming and software development besides web development. That includes back end development, software development, data science and writing system scripts among other things.")
+      $("#pLangInfo").text("Python is a general-purpose coding language which means that, unlike HTML, CSS, and JavaScript, it can be used for other types of programming and software development besides web development. That includes back end development, software development, data science and writing system scripts among other things.")
     } else if (rubytotal === csharptotal || csharptotal === pythontotal || rubytotal === pythontotal) {
       $("#pLanguage").text("ANY programming language");
       $("#choiceL").text("similar letters");
+      $("#pLangInfo").html("<a href='https://coderscat.com/learn-programming-languages'>Click Here!</a>");
     }
 
     $("#theirName").text(fullname);
