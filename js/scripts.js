@@ -52,6 +52,7 @@ $(document).ready(function() {
       rubytotal = add(rubytotal, 1);
     } else if (answer5 === "c#") {
       csharptotal = add(csharptotal, 1);
+      $("#congrats").show();
     } else if (answer5 === "python") {
       pythontotal = add(pythontotal, 1);
     }
@@ -63,7 +64,7 @@ $(document).ready(function() {
     } else if (pythontotal > rubytotal && pythontotal > csharptotal) {
       $("#pLanguage").text("Python");
     } else if (rubytotal === csharptotal || csharptotal === pythontotal || rubytotal === pythontotal) {
-      $("#pLanguage").text("ANY")
+      $("#pLanguage").text("ANY programming language")
     }
 
     $("#result").show();
