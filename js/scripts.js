@@ -16,17 +16,17 @@ $(document).ready(function() {
     let csharptotal = 0;
     let pythontotal = 0;
 
-    if (answer1 === ruby) {
+    if (answer1 === "ruby") {
       rubytotal = add(rubytotal, 1)
     }
 
-    if (rubytotal > csharp && rubytotal > pythontotal) {
+    if (rubytotal > csharptotal && rubytotal > pythontotal) {
       $("#pLanguage").text("Ruby on Rails");
-    } else if (csharp > rubytotal && csharp > pythontotal) {
+    } else if (csharptotal > rubytotal && csharptotal > pythontotal) {
       $("#pLanguage").text("C#");
-    } else if (pythontotal > rubytotal && pythontotal > csharp) {
+    } else if (pythontotal > rubytotal && pythontotal > csharptotal) {
       $("#pLanguage").text("Python");
-    } else if (rubytotal === csharptotal && csharp === pythontotal) {
+    } else if (rubytotal === csharptotal && csharptotal === pythontotal) {
       $("#pLanguage").text("ANY")
     }
 
