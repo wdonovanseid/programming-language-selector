@@ -16,6 +16,9 @@ $(document).ready(function() {
     let rubytotal = 0;
     let csharptotal = 0;
     let pythontotal = 0;
+    let gototal = 0;
+    let rusttotal = 0;
+    let swifttotal = 0;
 
     if (answer1 === "ruby") {
       rubytotal = add(rubytotal, 1);
@@ -23,6 +26,12 @@ $(document).ready(function() {
       csharptotal = add(csharptotal, 1);
     } else if (answer1 === "python") {
       pythontotal = add(pythontotal, 1);
+    } else if (answer1 === "go") {
+      gototal = add(gototal, 1);
+    } else if (answer1 === "rust") {
+      rusttotal = add(rusttotal, 1);
+    } else if (answer1 === "swift") {
+      swifttotal = add(swifttotal, 1);
     }
 
     if (answer2 === "ruby") {
@@ -31,6 +40,12 @@ $(document).ready(function() {
       csharptotal = add(csharptotal, 1);
     } else if (answer2 === "python") {
       pythontotal = add(pythontotal, 1);
+    } else if (answer1 === "go") {
+      gototal = add(gototal, 1);
+    } else if (answer1 === "rust") {
+      rusttotal = add(rusttotal, 1);
+    } else if (answer1 === "swift") {
+      swifttotal = add(swifttotal, 1);
     }
     
     if (answer3 === "ruby") {
@@ -39,6 +54,12 @@ $(document).ready(function() {
       csharptotal = add(csharptotal, 1);
     } else if (answer3 === "python") {
       pythontotal = add(pythontotal, 1);
+    } else if (answer1 === "go") {
+      gototal = add(gototal, 1);
+    } else if (answer1 === "rust") {
+      rusttotal = add(rusttotal, 1);
+    } else if (answer1 === "swift") {
+      swifttotal = add(swifttotal, 1);
     }
 
     if (answer4 === "ruby") {
@@ -47,16 +68,17 @@ $(document).ready(function() {
       csharptotal = add(csharptotal, 1);
     } else if (answer4 === "python") {
       pythontotal = add(pythontotal, 1);
+    } else if (answer1 === "go") {
+      gototal = add(gototal, 1);
+    } else if (answer1 === "rust") {
+      rusttotal = add(rusttotal, 1);
+    } else if (answer1 === "swift") {
+      swifttotal = add(swifttotal, 1);
     }
 
-    if (answer5 === "ruby") {
-      rubytotal = add(rubytotal, 1);
-    } else if (answer5 === "c#") {
-      csharptotal = add(csharptotal, 1);
+    if (answer5 === "c#") {
       $("#congrats").show();
       $("body").addClass("monty").removeClass("main");
-    } else if (answer5 === "python") {
-      pythontotal = add(pythontotal, 1);
     }
 
     if (rubytotal > csharptotal && rubytotal > pythontotal) {
