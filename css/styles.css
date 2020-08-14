@@ -19,8 +19,10 @@ img {
 }
 
 body {
-  background-image: url();
-  background-color: black;
+  background-image: url(../img/matrix.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   color: white;
   font-family: Times;
 }
