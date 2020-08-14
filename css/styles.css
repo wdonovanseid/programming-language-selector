@@ -19,6 +19,7 @@ img {
 }
 
 body {
+  background-image: url();
   background-color: black;
   color: white;
   font-family: Times;
