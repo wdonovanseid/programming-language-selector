@@ -1,5 +1,23 @@
+h1 {
+  text-align: center; 
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Times;
+}
+
+.card {
+  background-color: blue;
+  color: orange;
+  padding: 14px;
+  margin: 20px;
+}
+
 .btn {
   display: block;
+  color: white;
 }
 
 #result, #congrats {
