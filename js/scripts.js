@@ -60,15 +60,19 @@ $(document).ready(function() {
 
     if (rubytotal > csharptotal && rubytotal > pythontotal) {
       $("#pLanguage").text("Ruby on Rails");
+      $("#choiceL").text("A's");
       $("#pLangInfo").text("Rails is a development tool which gives web developers a framework, providing structure for all the code they write. The Rails framework helps developers to build websites and applications, because it abstracts and simplifies common repetitive tasks.")
     } else if (csharptotal > rubytotal && csharptotal > pythontotal) {
       $("#pLanguage").text("C#");
+      $("#choiceL").text("B's");
       $("#pLangInfo").text("C# is widely used for developing desktop applications, web applications and web services. It is used in creating applications of Microsoft at a large scale. C# is also used in game development in Unity.")
     } else if (pythontotal > rubytotal && pythontotal > csharptotal) {
       $("#pLanguage").text("Python");
+      $("#choiceL").text("C's");
       $("#pLangInfo").text("Python is a general-purpose coding language—which means that, unlike HTML, CSS, and JavaScript, it can be used for other types of programming and software development besides web development. That includes back end development, software development, data science and writing system scripts among other things.")
     } else if (rubytotal === csharptotal || csharptotal === pythontotal || rubytotal === pythontotal) {
-      $("#pLanguage").text("ANY programming language")
+      $("#pLanguage").text("ANY programming language");
+      $("#choiceL").text("similar letters");
     }
 
     $("#theirName").text(fullname);
